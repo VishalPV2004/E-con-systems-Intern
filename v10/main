@@ -1,0 +1,2287 @@
+/opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -lclovis_enx                        
+ 
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c - lclovis_enx
+riscv64-eyenix-linux-gnu-gcc: error: lclovis_enx: No such file or directory
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o ClovisCloud main.c FrameStreamer.c - lclovis_enx
+riscv64-eyenix-linux-gnu-gcc: error: lclovis_enx: No such file or directory
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o ClovisCloud main.c FrameStreamer.c -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccEfd9Rs.o: in function `init_v4l2':
+FrameStreamer.c:(.text+0x2c): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x30): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x74): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x78): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccEfd9Rs.o: in function `getStreaming':
+FrameStreamer.c:(.text+0xd6): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccEfd9Rs.o:FrameStreamer.c:(.text+0xda): more undefined references to `v4l2data' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_post'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_attr_setstacksize'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_wait'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_init'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_join'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_create'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_destroy'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccyar5ri.o: in function `init_v4l2':
+FrameStreamer.c:(.text+0x2c): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x30): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x74): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x78): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccyar5ri.o: in function `getStreaming':
+FrameStreamer.c:(.text+0xd6): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccyar5ri.o:FrameStreamer.c:(.text+0xda): more undefined references to `v4l2data' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_post'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_attr_setstacksize'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_wait'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_init'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_join'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_create'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_destroy'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_post'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_attr_setstacksize'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_wait'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_init'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_join'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_create'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_destroy'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c \
+-L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL \
+-lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ ls
+CameraSdk.h     FrameStreamer.c  GovComm  v4l2_capture.h
+CMakeLists.txt  FrameStreamer.h  main.c
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=1 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=2 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=3 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=4 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=5 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=6 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=8 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=12 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=15 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=16 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=19 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=20 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=24 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=28 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=30 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=31 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=32 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=33 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=34 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=35 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=37 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=38 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=39 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=41 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=42 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=43 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=46 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=47 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=48 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+50 packets transmitted, 0 received, +39 errors, 100% packet loss, time 50168ms
+pipe 3
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=5 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=6 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=7 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=8 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=12 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=15 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=16 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=18 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=19 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=20 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=22 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=24 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=29 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=30 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=31 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=33 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=34 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=35 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=37 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=38 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=39 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+42 packets transmitted, 0 received, +29 errors, 100% packet loss, time 41965ms
+pipe 4
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=1 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=2 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=3 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=5 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=6 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=7 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=9 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=11 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=15 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=18 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=19 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=22 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=28 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=29 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=30 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=31 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=32 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=33 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=35 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=36 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=37 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=39 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=40 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=41 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=46 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=47 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=48 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+63 packets transmitted, 0 received, +36 errors, 100% packet loss, time 63496ms
+pipe 3
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=2 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=3 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=4 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=8 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=12 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=16 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=18 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=20 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=22 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=24 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=28 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+30 packets transmitted, 0 received, +21 errors, 100% packet loss, time 29693ms
+pipe 4
+vishal@ECON001136L:~/Desktop/Start$ cmake -B build
+Command 'cmake' not found, but can be installed with:
+sudo snap install cmake  # version 4.0.3, or
+sudo apt  install cmake  # version 3.22.1-1ubuntu1.22.04.2
+See 'snap info cmake' for additional versions.
+vishal@ECON001136L:~/Desktop/Start$ sudo install cmake
+[sudo] password for vishal: 
+install: missing destination file operand after 'cmake'
+Try 'install --help' for more information.
+vishal@ECON001136L:~/Desktop/Start$ sudo apt install cmake
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2 libllvm13
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  cmake-data dh-elpa-helper libjsoncpp25 librhash0
+Suggested packages:
+  cmake-doc ninja-build cmake-format
+The following NEW packages will be installed:
+  cmake cmake-data dh-elpa-helper libjsoncpp25 librhash0
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 7,135 kB of archives.
+After this operation, 31.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libjsoncpp25 amd64 1.9.5-3 [80.0 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7,610 B]
+Get:4 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake-data all 3.22.1-1ubuntu1.22.04.2 [1,913 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake amd64 3.22.1-1ubuntu1.22.04.2 [5,010 kB]
+Fetched 7,135 kB in 17s (416 kB/s)                                             
+Selecting previously unselected package libjsoncpp25:amd64.
+(Reading database ... 213809 files and directories currently installed.)
+Preparing to unpack .../libjsoncpp25_1.9.5-3_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-3) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../librhash0_1.4.2-1ubuntu1_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+Selecting previously unselected package dh-elpa-helper.
+Preparing to unpack .../dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_3.22.1-1ubuntu1.22.04.2_all.deb ...
+Unpacking cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.22.1-1ubuntu1.22.04.2_amd64.deb ...
+Unpacking cmake (3.22.1-1ubuntu1.22.04.2) ...
+Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+Setting up libjsoncpp25:amd64 (1.9.5-3) ...
+Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+Setting up cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+Setting up cmake (3.22.1-1ubuntu1.22.04.2) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.10) ...
+vishal@ECON001136L:~/Desktop/Start$ ls
+CameraSdk.h  CMakeLists.txt  FrameStreamer.c  FrameStreamer.h  GovComm  main.c  v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 33%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 66%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+build  CameraSdk.h  CMakeLists.txt  FrameStreamer.c  FrameStreamer.h  GovComm  main.c  v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ ls
+CameraSdk.h  CMakeLists.txt  FrameStreamer.c  FrameStreamer.h  GovComm  main.c  v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 33%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 66%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+riscv64-eyenix-linux-gnu-gcc: error: main.c: No such file or directory
+riscv64-eyenix-linux-gnu-gcc: error: FrameStreamer.c: No such file or directory
+riscv64-eyenix-linux-gnu-gcc: error: aieventhandler.c: No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `closefd':
+aieventhandler.c:(.text+0x2e0): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x2e4): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `checkModelFile':
+aieventhandler.c:(.text+0x2fc): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x300): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x31a): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o:aieventhandler.c:(.text+0x31e): more undefined references to `ai_model_file_name' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `.L26':
+aieventhandler.c:(.text+0x5a6): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5aa): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5bc): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5c0): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `.L33':
+aieventhandler.c:(.text+0x5d8): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5dc): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f0): undefined reference to `is_this_thread_exit'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f4): undefined reference to `is_this_thread_exit'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `closefd':
+aieventhandler.c:(.text+0x2e0): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x2e4): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `checkModelFile':
+aieventhandler.c:(.text+0x2fc): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x300): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x31a): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o:aieventhandler.c:(.text+0x31e): more undefined references to `ai_model_file_name' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `.L26':
+aieventhandler.c:(.text+0x5a6): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5aa): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5bc): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5c0): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `.L33':
+aieventhandler.c:(.text+0x5d8): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5dc): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f0): undefined reference to `is_this_thread_exit'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f4): undefined reference to `is_this_thread_exit'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/cc0tcEKC.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccnEKCjn.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/cc6ybLVi.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x72): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa2): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xb8): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xc4): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x10c): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x12e): undefined reference to `cJSON_Delete'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  v4l2_capture.h
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  main.c
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/cc2gwwhj.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0xf8): undefined reference to `rest_add_vehicle_count'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:53:45: error: 'status' undeclared (first use in this function)
+   53 |     printf("vehicle_AIStats status = %d\n", status);
+      |                                             ^~~~~~
+aieventhandler.c:53:45: note: each undeclared identifier is reported only once for each function it appears in
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  main.c
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  GovComm          v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 40%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GouComm /tftp
+[sudo] password for vishal: 
+cp: cannot stat 'GouComm': No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ ifconfig
+enp44s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.13  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::b9d2:5be:d601:6b7c  prefixlen 64  scopeid 0x20<link>
+        ether f4:ee:08:c6:91:0f  txqueuelen 1000  (Ethernet)
+        RX packets 27726  bytes 39672235 (39.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 870  bytes 92628 (92.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 45651  bytes 4133751 (4.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 45651  bytes 4133751 (4.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.51.219  netmask 255.255.248.0  broadcast 192.168.55.255
+        inet6 fe80::1518:18b6:750f:e5bf  prefixlen 64  scopeid 0x20<link>
+        ether 70:cd:0d:9c:ca:6b  txqueuelen 1000  (Ethernet)
+        RX packets 380780  bytes 430261571 (430.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 71580  bytes 18897767 (18.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  main.c
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  GovComm          v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ make
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ make
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  main.c
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  GovComm          v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ sudo cp GovComm /tftp
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 40%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  CameraSdk.h  cJSON.h       cloudctrl.c  CMakeLists.txt  FrameStreamer.c  GovComm  v4l2_capture.h
+aieventhandler.h  cJSON.c      cJSON-master  cloudctrl.h  common.h        FrameStreamer.h  main.c
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ md5sum
+^C
+vishal@ECON001136L:~/Desktop/Start/build$ md5sum GovComm
+6b495c50d937e0492ef975fd9b9f1ae5  GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ rm -r build
+rm: cannot remove 'build': No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovConn /tftp
+[sudo] password for vishal: 
+cp: cannot stat 'GovConn': No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 40%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovConn /tftp
+[sudo] password for vishal: 
+sudo: a password is required
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+/home/vishal/Desktop/Start/main.c: In function 'main':
+/home/vishal/Desktop/Start/main.c:15:5: warning: implicit declaration of function 'init_socket' [-Wimplicit-function-declaration]
+   15 |     init_socket(LOCALHOST);
+      |     ^~~~~~~~~~~
+/home/vishal/Desktop/Start/main.c:15:17: error: 'LOCALHOST' undeclared (first use in this function)
+   15 |     init_socket(LOCALHOST);
+      |                 ^~~~~~~~~
+/home/vishal/Desktop/Start/main.c:15:17: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:76: CMakeFiles/GovComm.dir/main.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+/home/vishal/Desktop/Start/FrameStreamer.c: In function 'getStreaming':
+/home/vishal/Desktop/Start/FrameStreamer.c:57:5: warning: implicit declaration of function 'closefd'; did you mean 'close'? [-Wimplicit-function-declaration]
+   57 |     closefd();
+      |     ^~~~~~~
+      |     close
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start/build$ 
+vishal@ECON001136L:~/Desktop/Start/build$ 
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+/home/vishal/Desktop/Start/main.c: In function 'main':
+/home/vishal/Desktop/Start/main.c:17:21: error: 'ai_event_tid' undeclared (first use in this function); did you mean 'sigevent_t'?
+   17 |     pthread_create(&ai_event_tid, NULL, handleAIModel, NULL);
+      |                     ^~~~~~~~~~~~
+      |                     sigevent_t
+/home/vishal/Desktop/Start/main.c:17:21: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:76: CMakeFiles/GovComm.dir/main.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: CMakeFiles/GovComm.dir/FrameStreamer.c.o:(.sbss+0x0): multiple definition of `ai_event_tid'; CMakeFiles/GovComm.dir/main.c.o:(.sbss+0x0): first defined here
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: CMakeFiles/GovComm.dir/aieventhandler.c.o:(.sbss+0x0): multiple definition of `ai_event_tid'; CMakeFiles/GovComm.dir/main.c.o:(.sbss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: CMakeFiles/GovComm.dir/main.c.o: in function `.L2':
+main.c:(.text+0x64): undefined reference to `ai_event_tid'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: main.c:(.text+0x68): undefined reference to `ai_event_tid'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp/
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start/build$ 
+
+
+--------------------------BOARD------------------------------
+
+vishal@ECON001136L:~/Downloads/RouteCAM_Python_Application 1 (1)/RouteCAM_Python_Application$ cd
+vishal@ECON001136L:~$ 
+vishal@ECON001136L:~$ telnet 192.168.1.10
+Trying 192.168.1.10...
+Connected to 192.168.1.10.
+Escape character is '^]'.
+
+routecam login: root
+Password: 
+Login incorrect
+routecam login: 
+routecam login: 
+routecam login: root
+Password: 
+root@routecam: ~# ps
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-rcu]
+    6 root     [kworker/0:0H]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   16 root     [kworker/1:0-eve]
+   17 root     [kworker/1:0H]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H]
+   23 root     [kdevtmpfs]
+   24 root     [netns]
+   25 root     [kworker/u6:1-ev]
+   27 root     [kworker/2:1-eve]
+  150 root     [kworker/u6:3-ev]
+  226 root     [oom_reaper]
+  241 root     [writeback]
+  243 root     [kcompactd0]
+  244 root     [ksmd]
+  246 root     [kblockd]
+  284 root     [kworker/1:1-mm_]
+  286 root     [watchdogd]
+  299 root     [kworker/0:1-mm_]
+  300 root     [rpciod]
+  301 root     [kworker/u7:0]
+  302 root     [xprtiod]
+  312 root     [kswapd0]
+  397 root     [nfsiod]
+  521 root     [ptp0]
+  574 root     [ipv6_addrconf]
+  590 root     [ubi_bgt0d]
+  607 root     /sbin/syslogd -n
+  611 root     /sbin/klogd -n
+  633 root     telnetd
+  659 root     socket_server
+  711 root     [ubifs_bgt0_0]
+  739 root     [irq/20-ETHERNET]
+  791 root     config
+  976 root     sh -c /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam || /routecam/bin/phytool green on && ec
+  978 root     /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam
+ 1016 root     /model/npuapp-forklift -b /model/forklift.bin -c /model/forklift.cfg
+ 1027 root     /routecam/bin/b_cast_client
+ 1037 root     Eyenixserver
+ 1039 root     /routecam/bin/check_ip
+ 1040 root     /sbin/getty -L console 0 vt100
+ 1041 root     [irq/15-UART7]
+ 1142 root     {ntpScript.sh} /bin/sh /routecam/ntpScript.sh
+25674 root     -sh
+26501 root     sleep 60
+27294 root     ps
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# ps
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-rcu]
+    6 root     [kworker/0:0H]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   16 root     [kworker/1:0-eve]
+   17 root     [kworker/1:0H]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H]
+   23 root     [kdevtmpfs]
+   24 root     [netns]
+   25 root     [kworker/u6:1+ev]
+   27 root     [kworker/2:1-mm_]
+  150 root     [kworker/u6:3-ev]
+  226 root     [oom_reaper]
+  241 root     [writeback]
+  243 root     [kcompactd0]
+  244 root     [ksmd]
+  246 root     [kblockd]
+  284 root     [kworker/1:1-mm_]
+  286 root     [watchdogd]
+  299 root     [kworker/0:1-mm_]
+  300 root     [rpciod]
+  301 root     [kworker/u7:0]
+  302 root     [xprtiod]
+  312 root     [kswapd0]
+  397 root     [nfsiod]
+  521 root     [ptp0]
+  574 root     [ipv6_addrconf]
+  590 root     [ubi_bgt0d]
+  607 root     /sbin/syslogd -n
+  611 root     /sbin/klogd -n
+  633 root     telnetd
+  659 root     socket_server
+  711 root     [ubifs_bgt0_0]
+  739 root     [irq/20-ETHERNET]
+  791 root     config
+  958 root     sleep 60
+  976 root     sh -c /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam || /routecam/bin/phytool green on && ec
+  978 root     /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam
+ 1016 root     /model/npuapp-forklift -b /model/forklift.bin -c /model/forklift.cfg
+ 1027 root     /routecam/bin/b_cast_client
+ 1037 root     Eyenixserver
+ 1039 root     /routecam/bin/check_ip
+ 1040 root     /sbin/getty -L console 0 vt100
+ 1041 root     [irq/15-UART7]
+ 1142 root     {ntpScript.sh} /bin/sh /routecam/ntpScript.sh
+ 3123 root     ps
+25674 root     -sh
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# 
+root@routecam: ~# ps
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-rcu]
+    6 root     [kworker/0:0H]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   16 root     [kworker/1:0-eve]
+   17 root     [kworker/1:0H]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H]
+   23 root     [kdevtmpfs]
+   24 root     [netns]
+   25 root     [kworker/u6:1-ev]
+   27 root     [kworker/2:1-mm_]
+  150 root     [kworker/u6:3-ev]
+  226 root     [oom_reaper]
+  241 root     [writeback]
+  243 root     [kcompactd0]
+  244 root     [ksmd]
+  246 root     [kblockd]
+  284 root     [kworker/1:1-mm_]
+  286 root     [watchdogd]
+  299 root     [kworker/0:1-mm_]
+  300 root     [rpciod]
+  301 root     [kworker/u7:0]
+  302 root     [xprtiod]
+  312 root     [kswapd0]
+  397 root     [nfsiod]
+  521 root     [ptp0]
+  574 root     [ipv6_addrconf]
+  590 root     [ubi_bgt0d]
+  607 root     /sbin/syslogd -n
+  611 root     /sbin/klogd -n
+  633 root     telnetd
+  659 root     socket_server
+  711 root     [ubifs_bgt0_0]
+  739 root     [irq/20-ETHERNET]
+  791 root     config
+  976 root     sh -c /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam || /routecam/bin/phytool green on && ec
+  978 root     /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam
+ 1016 root     /model/npuapp-forklift -b /model/forklift.bin -c /model/forklift.cfg
+ 1027 root     /routecam/bin/b_cast_client
+ 1037 root     Eyenixserver
+ 1039 root     /routecam/bin/check_ip
+ 1040 root     /sbin/getty -L console 0 vt100
+ 1041 root     [irq/15-UART7]
+ 1142 root     {ntpScript.sh} /bin/sh /routecam/ntpScript.sh
+17121 root     sleep 60
+18256 root     ps
+25674 root     -sh
+root@routecam: ~# pwd
+/root
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm
+root@routecam: ~# chmod +x GovComm 
+root@routecam: ~# ls
+GovComm
+root@routecam: ~# ./GovComm
+./GovComm: error while loading shared libraries: libclovis_enx.so: cannot open shared object file: No such file or directory
+root@routecam: ~# tftp -g -r libclovis_enx.so 192.168.1.13
+root@routecam: ~# ls
+GovComm           libclovis_enx.so
+root@routecam: ~# chmod +x libclovis_enx.so 
+root@routecam: ~# ls
+GovComm           libclovis_enx.so
+root@routecam: ~# ./GovComm 
+./GovComm: error while loading shared libraries: libclovis_enx.so: cannot open shared object file: No such file or directory
+root@routecam: ~# export PATH=$PATH:$PWD
+root@routecam: ~# ./GovComm 
+./GovComm: error while loading shared libraries: libclovis_enx.so: cannot open shared object file: No such file or directory
+root@routecam: ~# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:."
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = -1
+Deinit completed
+root@routecam: ~# ps
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-rcu]
+    6 root     [kworker/0:0H]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   16 root     [kworker/1:0-eve]
+   17 root     [kworker/1:0H]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H]
+   23 root     [kdevtmpfs]
+   24 root     [netns]
+   25 root     [kworker/u6:1-ev]
+   27 root     [kworker/2:1-mm_]
+  150 root     [kworker/u6:3-ev]
+  226 root     [oom_reaper]
+  241 root     [writeback]
+  243 root     [kcompactd0]
+  244 root     [ksmd]
+  246 root     [kblockd]
+  284 root     [kworker/1:1-mm_]
+  286 root     [watchdogd]
+  299 root     [kworker/0:1-mm_]
+  300 root     [rpciod]
+  301 root     [kworker/u7:0]
+  302 root     [xprtiod]
+  312 root     [kswapd0]
+  397 root     [nfsiod]
+  521 root     [ptp0]
+  574 root     [ipv6_addrconf]
+  590 root     [ubi_bgt0d]
+  607 root     /sbin/syslogd -n
+  611 root     /sbin/klogd -n
+  633 root     telnetd
+  659 root     socket_server
+  711 root     [ubifs_bgt0_0]
+  739 root     [irq/20-ETHERNET]
+  791 root     config
+  870 root     sleep 60
+  976 root     sh -c /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam || /routecam/bin/phytool green on && ec
+  978 root     /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam
+ 1016 root     /model/npuapp-forklift -b /model/forklift.bin -c /model/forklift.cfg
+ 1027 root     /routecam/bin/b_cast_client
+ 1037 root     Eyenixserver
+ 1039 root     /routecam/bin/check_ip
+ 1040 root     /sbin/getty -L console 0 vt100
+ 1041 root     [irq/15-UART7]
+ 1142 root     {ntpScript.sh} /bin/sh /routecam/ntpScript.sh
+ 2268 root     ps
+25674 root     -sh
+28591 root     [kworker/u6:0-ev]
+root@routecam: ~# pwd
+/root
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm           libclovis_enx.so
+root@routecam: ~# rm -r libclovis_enx.so 
+root@routecam: ~# tftp -g -r libclovis_enx_3.so 192.168.1.13
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# chmod +x libclovis_enx_3.so 
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ./GovComm
+Capture init return value
+Capture init return value = 0
+Deinit completed
+root@routecam: ~# cd /
+root@routecam: # ls
+App                              lib                              nfs                              run
+bin                              lib64                            onvifclient-20240828_140810.txt  sbin
+dev                              linuxrc                          opt                              sys
+drv                              media                            proc                             tmp
+etc                              mnt                              root                             usr
+init                             model                            routecam                         var
+root@routecam: # cd /root
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ps
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-rcu]
+    6 root     [kworker/0:0H]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   16 root     [kworker/1:0-eve]
+   17 root     [kworker/1:0H]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H]
+   23 root     [kdevtmpfs]
+   24 root     [netns]
+   27 root     [kworker/2:1-eve]
+  150 root     [kworker/u6:3-ev]
+  226 root     [oom_reaper]
+  241 root     [writeback]
+  243 root     [kcompactd0]
+  244 root     [ksmd]
+  246 root     [kblockd]
+  284 root     [kworker/1:1-mm_]
+  286 root     [watchdogd]
+  299 root     [kworker/0:1-eve]
+  300 root     [rpciod]
+  301 root     [kworker/u7:0]
+  302 root     [xprtiod]
+  312 root     [kswapd0]
+  397 root     [nfsiod]
+  521 root     [ptp0]
+  574 root     [ipv6_addrconf]
+  590 root     [ubi_bgt0d]
+  607 root     /sbin/syslogd -n
+  611 root     /sbin/klogd -n
+  633 root     telnetd
+  659 root     socket_server
+  711 root     [ubifs_bgt0_0]
+  739 root     [irq/20-ETHERNET]
+  791 root     config
+  976 root     sh -c /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam || /routecam/bin/phytool green on && ec
+  978 root     /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam
+ 1016 root     /model/npuapp-forklift -b /model/forklift.bin -c /model/forklift.cfg
+ 1027 root     /routecam/bin/b_cast_client
+ 1037 root     Eyenixserver
+ 1039 root     /routecam/bin/check_ip
+ 1040 root     /sbin/getty -L console 0 vt100
+ 1041 root     [irq/15-UART7]
+ 1142 root     {ntpScript.sh} /bin/sh /routecam/ntpScript.sh
+14185 root     [kworker/u6:1-ev]
+25674 root     -sh
+26078 root     sleep 60
+27250 root     ps
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Deinit completed
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# cd /
+root@routecam: # ls
+App                              lib                              nfs                              run
+bin                              lib64                            onvifclient-20240828_140810.txt  sbin
+dev                              linuxrc                          opt                              sys
+drv                              media                            proc                             tmp
+etc                              mnt                              root                             usr
+init                             model                            routecam                         var
+root@routecam: # cd
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# rm GovComm 
+root@routecam: ~# ls
+libclovis_enx_3.so
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# mv libclovis_enx_3.so libclovis_enx.so
+root@routecam: ~# ls
+GovComm           libclovis_enx.so
+root@routecam: ~# chmod +x GovComm 
+root@routecam: ~# ./GovComm 
+./GovComm: error while loading shared libraries: libclovis_enx_3.so: cannot open shared object file: No such file or directory
+root@routecam: ~# mv libclovis_enx.so libclovis_enx_3.so
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Deinit completed
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# rm -r GovComm 
+root@routecam: ~# rm -r libclovis_enx_3.so 
+root@routecam: ~# pwd
+/root
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm
+root@routecam: ~# chmod +x GovComm 
+root@routecam: ~# tftp -g -r libclovis_enx_3.so 192.168.1.13
+root@routecam: ~# chmod +x libclovis_enx_3.so 
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ./GovComm
+Capture init return value
+Capture init return value = 0
+Deinit completed
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# md5sum GovComm
+6b495c50d937e0492ef975fd9b9f1ae5  GovComm
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Failed to capture frameroot@routecam: ~# ps
+PID   USER     COMMAND
+    1 root     init
+    2 root     [kthreadd]
+    3 root     [rcu_gp]
+    4 root     [rcu_par_gp]
+    5 root     [kworker/0:0-rcu]
+    6 root     [kworker/0:0H]
+    8 root     [mm_percpu_wq]
+    9 root     [ksoftirqd/0]
+   10 root     [rcu_sched]
+   11 root     [migration/0]
+   12 root     [cpuhp/0]
+   13 root     [cpuhp/1]
+   14 root     [migration/1]
+   15 root     [ksoftirqd/1]
+   16 root     [kworker/1:0-eve]
+   17 root     [kworker/1:0H]
+   18 root     [cpuhp/2]
+   19 root     [migration/2]
+   20 root     [ksoftirqd/2]
+   21 root     [kworker/2:0-eve]
+   22 root     [kworker/2:0H]
+   23 root     [kdevtmpfs]
+   24 root     [netns]
+   27 root     [kworker/2:1-mm_]
+  150 root     [kworker/u6:3-ev]
+  226 root     [oom_reaper]
+  241 root     [writeback]
+  243 root     [kcompactd0]
+  244 root     [ksmd]
+  246 root     [kblockd]
+  284 root     [kworker/1:1-mm_]
+  286 root     [watchdogd]
+  299 root     [kworker/0:1-mm_]
+  300 root     [rpciod]
+  301 root     [kworker/u7:0]
+  302 root     [xprtiod]
+  312 root     [kswapd0]
+  397 root     [nfsiod]
+  521 root     [ptp0]
+  574 root     [ipv6_addrconf]
+  590 root     [ubi_bgt0d]
+  607 root     /sbin/syslogd -n
+  611 root     /sbin/klogd -n
+  633 root     telnetd
+  659 root     socket_server
+  711 root     [ubifs_bgt0_0]
+  739 root     [irq/20-ETHERNET]
+  791 root     config
+  976 root     sh -c /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam || /routecam/bin/phytool green on && ec
+  978 root     /usr/bin/v4l2rtspserver /dev/video3 -fHEVC -W1920 -H1080 -P5005 -F30 -u routecam
+ 1016 root     /model/npuapp-forklift -b /model/forklift.bin -c /model/forklift.cfg
+ 1027 root     /routecam/bin/b_cast_client
+ 1037 root     Eyenixserver
+ 1039 root     /routecam/bin/check_ip
+ 1040 root     /sbin/getty -L console 0 vt100
+ 1041 root     [irq/15-UART7]
+ 1142 root     {ntpScript.sh} /bin/sh /routecam/ntpScript.sh
+14185 root     [kworker/u6:1-ev]
+16311 root     /tmp/ntpd -d -d -d -N -p 216.239.35.0 -q -n
+16322 root     sleep 60
+16456 root     ps
+25674 root     -sh
+root@routecam: ~# 
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm             libclovis_enx_3.so
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Frame capture success!File created! Writing...Deinit completed
+GetStream FAILED
+root@routecam: ~# ls
+GovComm             frame.jpeg          libclovis_enx_3.so
+root@routecam: ~# ls -l
+total 232
+-rwxr-xr-x    1 root     root         52024 Jan  1 01:59 GovComm
+-rw-r--r--    1 root     root         76522 Jan  1 01:59 frame.jpeg
+-rwxr-xr-x    1 root     root        102696 Jan  1 01:24 libclovis_enx_3.so
+root@routecam: ~# sudo cp frame.jpeg 192.168.1.13
+-sh: sudo: not found
+root@routecam: ~# cp frame.jpeg /tftp
+root@routecam: ~# cp frame.jpeg 192.168.1.13 /tftp
+cp: can't stat '/tftp/frame.jpeg': Not a directory
+cp: can't stat '192.168.1.13': No such file or directory
+root@routecam: ~# cp frame.jpeg /tftp 192.168.1.13
+cp: can't create '192.168.1.13/frame.jpeg': Path does not exist
+cp: can't create '192.168.1.13/tftp': Path does not exist
+root@routecam: ~# tftp -p -r frame.jpeg 192.168.1.13
+root@routecam: ~# ls
+GovComm             frame.jpeg          libclovis_enx_3.so
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm             frame.jpeg          libclovis_enx_3.so
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Frame capture success!File created! Writing...Deinit completed
+Socket closed Successfully
+Socket successfully created..
+Connected to the server..
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Frame capture success!File created! Writing...Deinit completed
+Socket closed Successfully
+Socket successfully created..
+Connected to the server..
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# ls
+GovComm             frame.jpeg          libclovis_enx_3.so
+root@routecam: ~# ./GovComm 
+Capture init return value
+Capture init return value = 0
+Frame capture success!File created! Writing...Deinit completed
+Socket closed Successfully
+Socket successfully created..
+Connected to the server..
+root@routecam: ~# ls
+GovComm             frame.jpeg          libclovis_enx_3.so
+root@routecam: ~# rm GovComm 
+root@routecam: ~# tftp -g -r GovComm 192.168.1.13
+root@routecam: ~# chmod +x GovComm `
+> ^C
+> chmod +x GovComm `^C
+> 
+> 
+> 
+> ^C
+> exit
+> '
+> quit
+> 
+-----------------------------------
+
+vishal@ECON001136L:~/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL$ sudo cp libclovis_enx_3.so /tftp
+
+
+-------------------------------------
+
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -lclovis_enx                        
+ 
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c - lclovis_enx
+riscv64-eyenix-linux-gnu-gcc: error: lclovis_enx: No such file or directory
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o ClovisCloud main.c FrameStreamer.c - lclovis_enx
+riscv64-eyenix-linux-gnu-gcc: error: lclovis_enx: No such file or directory
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o ClovisCloud main.c FrameStreamer.c -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccEfd9Rs.o: in function `init_v4l2':
+FrameStreamer.c:(.text+0x2c): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x30): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x74): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x78): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccEfd9Rs.o: in function `getStreaming':
+FrameStreamer.c:(.text+0xd6): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccEfd9Rs.o:FrameStreamer.c:(.text+0xda): more undefined references to `v4l2data' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_post'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_attr_setstacksize'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_wait'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_init'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_join'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_create'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `sem_destroy'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/libclovis_enx.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccyar5ri.o: in function `init_v4l2':
+FrameStreamer.c:(.text+0x2c): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x30): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x74): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: FrameStreamer.c:(.text+0x78): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccyar5ri.o: in function `getStreaming':
+FrameStreamer.c:(.text+0xd6): undefined reference to `v4l2data'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccyar5ri.o:FrameStreamer.c:(.text+0xda): more undefined references to `v4l2data' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_post'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_attr_setstacksize'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_wait'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_init'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_join'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_create'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_destroy'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_post'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_attr_setstacksize'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_wait'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_init'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_join'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_create'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `sem_destroy'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL/libclovis_enx.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c \
+-L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL \
+-lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ ls
+CameraSdk.h     FrameStreamer.c  GovComm  v4l2_capture.h
+CMakeLists.txt  FrameStreamer.h  main.c
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=1 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=2 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=3 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=4 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=5 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=6 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=8 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=12 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=15 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=16 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=19 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=20 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=24 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=28 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=30 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=31 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=32 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=33 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=34 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=35 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=37 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=38 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=39 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=41 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=42 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=43 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=46 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=47 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=48 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+50 packets transmitted, 0 received, +39 errors, 100% packet loss, time 50168ms
+pipe 3
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=5 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=6 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=7 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=8 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=12 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=15 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=16 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=18 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=19 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=20 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=22 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=24 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=29 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=30 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=31 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=33 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=34 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=35 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=37 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=38 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=39 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+42 packets transmitted, 0 received, +29 errors, 100% packet loss, time 41965ms
+pipe 4
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=1 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=2 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=3 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=5 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=6 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=7 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=9 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=11 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=15 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=18 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=19 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=22 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=28 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=29 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=30 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=31 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=32 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=33 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=35 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=36 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=37 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=39 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=40 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=41 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=46 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=47 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=48 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+63 packets transmitted, 0 received, +36 errors, 100% packet loss, time 63496ms
+pipe 3
+vishal@ECON001136L:~/Desktop/Start$ ping 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+From 192.168.1.13 icmp_seq=2 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=3 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=4 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=8 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=9 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=10 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=12 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=13 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=14 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=16 Destination Host Unreachable
+ping: sendmsg: No route to host
+From 192.168.1.13 icmp_seq=17 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=18 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=20 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=21 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=22 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=23 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=24 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=25 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=26 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=27 Destination Host Unreachable
+From 192.168.1.13 icmp_seq=28 Destination Host Unreachable
+^C
+--- 192.168.1.10 ping statistics ---
+30 packets transmitted, 0 received, +21 errors, 100% packet loss, time 29693ms
+pipe 4
+vishal@ECON001136L:~/Desktop/Start$ cmake -B build
+Command 'cmake' not found, but can be installed with:
+sudo snap install cmake  # version 4.0.3, or
+sudo apt  install cmake  # version 3.22.1-1ubuntu1.22.04.2
+See 'snap info cmake' for additional versions.
+vishal@ECON001136L:~/Desktop/Start$ sudo install cmake
+[sudo] password for vishal: 
+install: missing destination file operand after 'cmake'
+Try 'install --help' for more information.
+vishal@ECON001136L:~/Desktop/Start$ sudo apt install cmake
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2 libllvm13
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  cmake-data dh-elpa-helper libjsoncpp25 librhash0
+Suggested packages:
+  cmake-doc ninja-build cmake-format
+The following NEW packages will be installed:
+  cmake cmake-data dh-elpa-helper libjsoncpp25 librhash0
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 7,135 kB of archives.
+After this operation, 31.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libjsoncpp25 amd64 1.9.5-3 [80.0 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 librhash0 amd64 1.4.2-1ubuntu1 [125 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 dh-elpa-helper all 2.0.9ubuntu1 [7,610 B]
+Get:4 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake-data all 3.22.1-1ubuntu1.22.04.2 [1,913 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu jammy-updates/main amd64 cmake amd64 3.22.1-1ubuntu1.22.04.2 [5,010 kB]
+Fetched 7,135 kB in 17s (416 kB/s)                                             
+Selecting previously unselected package libjsoncpp25:amd64.
+(Reading database ... 213809 files and directories currently installed.)
+Preparing to unpack .../libjsoncpp25_1.9.5-3_amd64.deb ...
+Unpacking libjsoncpp25:amd64 (1.9.5-3) ...
+Selecting previously unselected package librhash0:amd64.
+Preparing to unpack .../librhash0_1.4.2-1ubuntu1_amd64.deb ...
+Unpacking librhash0:amd64 (1.4.2-1ubuntu1) ...
+Selecting previously unselected package dh-elpa-helper.
+Preparing to unpack .../dh-elpa-helper_2.0.9ubuntu1_all.deb ...
+Unpacking dh-elpa-helper (2.0.9ubuntu1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../cmake-data_3.22.1-1ubuntu1.22.04.2_all.deb ...
+Unpacking cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../cmake_3.22.1-1ubuntu1.22.04.2_amd64.deb ...
+Unpacking cmake (3.22.1-1ubuntu1.22.04.2) ...
+Setting up dh-elpa-helper (2.0.9ubuntu1) ...
+Setting up libjsoncpp25:amd64 (1.9.5-3) ...
+Setting up librhash0:amd64 (1.4.2-1ubuntu1) ...
+Setting up cmake-data (3.22.1-1ubuntu1.22.04.2) ...
+Setting up cmake (3.22.1-1ubuntu1.22.04.2) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.10) ...
+vishal@ECON001136L:~/Desktop/Start$ ls
+CameraSdk.h  CMakeLists.txt  FrameStreamer.c  FrameStreamer.h  GovComm  main.c  v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 33%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 66%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+build  CameraSdk.h  CMakeLists.txt  FrameStreamer.c  FrameStreamer.h  GovComm  main.c  v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ ls
+CameraSdk.h  CMakeLists.txt  FrameStreamer.c  FrameStreamer.h  GovComm  main.c  v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 33%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 66%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+riscv64-eyenix-linux-gnu-gcc: error: main.c: No such file or directory
+riscv64-eyenix-linux-gnu-gcc: error: FrameStreamer.c: No such file or directory
+riscv64-eyenix-linux-gnu-gcc: error: aieventhandler.c: No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `closefd':
+aieventhandler.c:(.text+0x2e0): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x2e4): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `checkModelFile':
+aieventhandler.c:(.text+0x2fc): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x300): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x31a): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o:aieventhandler.c:(.text+0x31e): more undefined references to `ai_model_file_name' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `.L26':
+aieventhandler.c:(.text+0x5a6): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5aa): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5bc): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5c0): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccZcbMBL.o: in function `.L33':
+aieventhandler.c:(.text+0x5d8): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5dc): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f0): undefined reference to `is_this_thread_exit'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f4): undefined reference to `is_this_thread_exit'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `closefd':
+aieventhandler.c:(.text+0x2e0): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x2e4): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `checkModelFile':
+aieventhandler.c:(.text+0x2fc): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x300): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x31a): undefined reference to `ai_model_file_name'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o:aieventhandler.c:(.text+0x31e): more undefined references to `ai_model_file_name' follow
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `.L26':
+aieventhandler.c:(.text+0x5a6): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5aa): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5bc): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5c0): undefined reference to `is_model_updated_flag'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccXxxD2X.o: in function `.L33':
+aieventhandler.c:(.text+0x5d8): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5dc): undefined reference to `is_model_file_present'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f0): undefined reference to `is_this_thread_exit'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x5f4): undefined reference to `is_this_thread_exit'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/cc0tcEKC.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:24:9: warning: implicit declaration of function 'getMacAddress' [-Wimplicit-function-declaration]
+   24 |     if (getMacAddress(&macAddress) == SUCCESS) {
+      |         ^~~~~~~~~~~~~
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/ccnEKCjn.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x50): undefined reference to `getMacAddress'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x6c): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xd6): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xec): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xf8): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x140): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x162): undefined reference to `cJSON_Delete'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/cc6ybLVi.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0x3e): undefined reference to `cJSON_CreateObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x72): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xa2): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xb8): undefined reference to `cJSON_AddStringToObject'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0xc4): undefined reference to `cJSON_Print'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x10c): undefined reference to `rest_add_vehicle_count'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: aieventhandler.c:(.text+0x12e): undefined reference to `cJSON_Delete'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  v4l2_capture.h
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  main.c
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:52:18: warning: implicit declaration of function 'rest_add_vehicle_count' [-Wimplicit-function-declaration]
+   52 |     int status = rest_add_vehicle_count(&json_buffer);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: /tmp/cc2gwwhj.o: in function `vehicle_AIStats':
+aieventhandler.c:(.text+0xf8): undefined reference to `rest_add_vehicle_count'
+collect2: error: ld returned 1 exit status
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+aieventhandler.c: In function 'vehicle_AIStats':
+aieventhandler.c:53:45: error: 'status' undeclared (first use in this function)
+   53 |     printf("vehicle_AIStats status = %d\n", status);
+      |                                             ^~~~~~
+aieventhandler.c:53:45: note: each undeclared identifier is reported only once for each function it appears in
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  main.c
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  GovComm          v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 40%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GouComm /tftp
+[sudo] password for vishal: 
+cp: cannot stat 'GouComm': No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ ifconfig
+enp44s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.13  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::b9d2:5be:d601:6b7c  prefixlen 64  scopeid 0x20<link>
+        ether f4:ee:08:c6:91:0f  txqueuelen 1000  (Ethernet)
+        RX packets 27726  bytes 39672235 (39.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 870  bytes 92628 (92.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 45651  bytes 4133751 (4.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 45651  bytes 4133751 (4.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp0s20f3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.51.219  netmask 255.255.248.0  broadcast 192.168.55.255
+        inet6 fe80::1518:18b6:750f:e5bf  prefixlen 64  scopeid 0x20<link>
+        ether 70:cd:0d:9c:ca:6b  txqueuelen 1000  (Ethernet)
+        RX packets 380780  bytes 430261571 (430.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 71580  bytes 18897767 (18.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  main.c
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  GovComm          v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ make
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: cannot find -lclovis_enx
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ make
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  build        cJSON.c  cJSON-master  cloudctrl.h     common.h         FrameStreamer.h  main.c
+aieventhandler.h  CameraSdk.h  cJSON.h  cloudctrl.c   CMakeLists.txt  FrameStreamer.c  GovComm          v4l2_capture.h
+vishal@ECON001136L:~/Desktop/Start$ sudo cp GovComm /tftp
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 40%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ ls
+aieventhandler.c  CameraSdk.h  cJSON.h       cloudctrl.c  CMakeLists.txt  FrameStreamer.c  GovComm  v4l2_capture.h
+aieventhandler.h  cJSON.c      cJSON-master  cloudctrl.h  common.h        FrameStreamer.h  main.c
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  GovComm  Makefile
+vishal@ECON001136L:~/Desktop/Start/build$ md5sum
+^C
+vishal@ECON001136L:~/Desktop/Start/build$ md5sum GovComm
+6b495c50d937e0492ef975fd9b9f1ae5  GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ rm -r build
+rm: cannot remove 'build': No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ cd ..
+vishal@ECON001136L:~/Desktop/Start$ rm -r build
+vishal@ECON001136L:~/Desktop/Start$ /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc -o GovComm main.c FrameStreamer.c aieventhandler.c cJSON.c -L/home/vishal/Downloads/APP_latest_AIMODEL_14052024PM_latest_1/APP_latest_AIMODEL -lclovis_enx_3 -lpthread -lrt
+vishal@ECON001136L:~/Desktop/Start$ mkdir build
+vishal@ECON001136L:~/Desktop/Start$ cd build
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- The C compiler identification is GNU 10.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/riscv/eyenix/bin/riscv64-eyenix-linux-gnu-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Building C object CMakeFiles/GovComm.dir/cJSON.c.o
+[100%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovConn /tftp
+[sudo] password for vishal: 
+cp: cannot stat 'GovConn': No such file or directory
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 40%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovConn /tftp
+[sudo] password for vishal: 
+sudo: a password is required
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+/home/vishal/Desktop/Start/main.c: In function 'main':
+/home/vishal/Desktop/Start/main.c:15:5: warning: implicit declaration of function 'init_socket' [-Wimplicit-function-declaration]
+   15 |     init_socket(LOCALHOST);
+      |     ^~~~~~~~~~~
+/home/vishal/Desktop/Start/main.c:15:17: error: 'LOCALHOST' undeclared (first use in this function)
+   15 |     init_socket(LOCALHOST);
+      |                 ^~~~~~~~~
+/home/vishal/Desktop/Start/main.c:15:17: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:76: CMakeFiles/GovComm.dir/main.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+/home/vishal/Desktop/Start/FrameStreamer.c: In function 'getStreaming':
+/home/vishal/Desktop/Start/FrameStreamer.c:57:5: warning: implicit declaration of function 'closefd'; did you mean 'close'? [-Wimplicit-function-declaration]
+   57 |     closefd();
+      |     ^~~~~~~
+      |     close
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start/build$ 
+vishal@ECON001136L:~/Desktop/Start/build$ 
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+/home/vishal/Desktop/Start/main.c: In function 'main':
+/home/vishal/Desktop/Start/main.c:17:21: error: 'ai_event_tid' undeclared (first use in this function); did you mean 'sigevent_t'?
+   17 |     pthread_create(&ai_event_tid, NULL, handleAIModel, NULL);
+      |                     ^~~~~~~~~~~~
+      |                     sigevent_t
+/home/vishal/Desktop/Start/main.c:17:21: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:76: CMakeFiles/GovComm.dir/main.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: CMakeFiles/GovComm.dir/FrameStreamer.c.o:(.sbss+0x0): multiple definition of `ai_event_tid'; CMakeFiles/GovComm.dir/main.c.o:(.sbss+0x0): first defined here
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: CMakeFiles/GovComm.dir/aieventhandler.c.o:(.sbss+0x0): multiple definition of `ai_event_tid'; CMakeFiles/GovComm.dir/main.c.o:(.sbss+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: CMakeFiles/GovComm.dir/main.c.o: in function `.L2':
+main.c:(.text+0x64): undefined reference to `ai_event_tid'
+/opt/riscv/eyenix/bin/../lib/gcc/riscv64-eyenix-linux-gnu/10.1.0/../../../../riscv64-eyenix-linux-gnu/bin/ld: main.c:(.text+0x68): undefined reference to `ai_event_tid'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/GovComm.dir/build.make:145: GovComm] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/GovComm.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+vishal@ECON001136L:~/Desktop/Start/build$ cmake ..
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vishal/Desktop/Start/build
+vishal@ECON001136L:~/Desktop/Start/build$ make
+Consolidate compiler generated dependencies of target GovComm
+[ 20%] Building C object CMakeFiles/GovComm.dir/main.c.o
+[ 40%] Building C object CMakeFiles/GovComm.dir/FrameStreamer.c.o
+[ 60%] Building C object CMakeFiles/GovComm.dir/aieventhandler.c.o
+[ 80%] Linking C executable GovComm
+[100%] Built target GovComm
+vishal@ECON001136L:~/Desktop/Start/build$ sudo cp GovComm /tftp/
+[sudo] password for vishal: 
+vishal@ECON001136L:~/Desktop/Start/build$ 
+
+
+--------------------------------BOARD CONFIG-----------------------------
+tftp -g -r GovComm 192.168.1.13
+tftp -g -r libclovis_enx.so 192.168.1.13
+chmod +x GovComm
+chmod +x libclovis_enx.so
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:."
+
+
